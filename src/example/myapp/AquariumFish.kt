@@ -35,6 +35,15 @@ class Shark:FishAction, FishColor{
     }
 }
 
+sealed class Seal
+class Sealion: Seal()
+class Walrus: Seal()
 
+fun matchSeal(seal: Seal):String{
+    return when(seal){
+        is Walrus -> "walrus"
+        is Sealion -> "sea lion"
+    }
+}
 
 
